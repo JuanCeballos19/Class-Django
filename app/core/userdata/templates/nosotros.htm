@@ -1,0 +1,112 @@
+{% extends 'base.htm' %}
+
+
+{% block contenido %}
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        
+        
+    </head>
+<body id="page-top">
+    <style>
+        header.masthead {
+
+            background-image: url("{% static 'assets/media/img/header-bg.jpg' %}"); 
+        }
+    </style>
+
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: #212529">
+                <div class="container">
+                    <a class="navbar-brand js-scroll-trigger" href="#page-top"></a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav text-uppercase ml-auto">
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'index' %}">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#somos">¿Quien somos?</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#servicios">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#proyecto">Proyectos</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'nosotros' %}">Equipo</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'contacto' %}">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Masthead-->
+            <header id="inicio">
+                <!--<div class="container">
+                    <div class="masthead-heading text-uppercase text-white">TopParking</div>
+                    <div class="masthead-subheading">ENCUENTRA EL MEJOR PARQUEADERO CERCA DE TI</div>
+                    
+                    <a class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" href="#somos">DIME MAS</a>
+                </div>-->
+            </header>
+
+<!-- Team-->
+            <section class="page-section bg-light" id="team">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">NUESTRO EQUIPO</h2>
+                        <h4>TopParking</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="{% static 'assets/media/img/team/3.jpg' %}" alt="" />
+                                <h4>Jhon Castiblanco</h4>
+                                <p class="text-muted">Informacion</p>
+                                <p class="text-muted">Correo: Jhoneinsteing@gmail.com</p>
+                                <p class="text-muted">Telefono: 3204127606</p>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="{% static 'assets/media/img/team/2.jpeg' %}" alt="" />
+                                <h4>Juan David Ceballos</h4>
+                                <p class="text-muted">Informacion</p>
+                                <p class="text-muted">Correo: juanceballos1911@gmail.com</p>
+                                <p class="text-muted">Telefono: 313 5542122</p>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/juandavid.ceballosmunoz"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="{% static 'assets/media/img/team/por-defecto.jpg' %}" alt="" />
+                                <h4>Sebastian Cardona</h4>
+                                <p class="text-muted">Informacion</p>
+                                <p class="text-muted">Correo: correo@gmail.com</p>
+                                <p class="text-muted">Telefono: 301 6091063</p>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="{% static 'assets/media/img/team/1.jpeg' %}" alt="" />
+                                <h4>Luis Miguel Vivas</h4>
+                                <p class="text-muted">Informacion</p>
+                                <p class="text-muted">Correo: vivaspalaciosluismiguel@gmail.com</p>
+                                <p class="text-muted">Telefono: 321 8766901</p>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+</body>
+
+
+
+{% endblock %}
